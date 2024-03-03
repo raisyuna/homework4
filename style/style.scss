@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+.main {
+    background-color: #d5bb9e;
+    width: 100%;
+    overflow: hidden;
+}
+
+.btn-base {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 20px;
+    font-size: 18px;
+}
+
+.header { position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-family: "Dancing Script", cursive;
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        z-index: 999;
+        bottom:-6px;
+    }
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        gap: 40px;
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.info {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin-right: 250px;
+    color: white;
+    line-height: 40px;
+    h1 {
+        font-weight: 400;
+        margin: 0;
+    }
+    .txt {
+        margin: 0;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+.circles {
+    position: relative;
+
+    .circle1 {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #b6341c;
+        object-fit: cover;
+        z-index: 7;
+        top: -291px;
+        left: -77px;
+    }
+    .circle2 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #b6341c;
+        object-fit: cover;
+        z-index: 7;
+        top: 441px;
+        left: 1289px;
+    }
+
+    .circle3 {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #719c9a;
+        z-index: 6;
+        top: 423px;
+    left: 1255px;
+    }
+    .circle4 {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #719c9a;
+        z-index: 6;
+        top: -279px;
+        left: -96px;
+    }
+    .circle5 {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #d4c9b9;
+        z-index: 5;
+        top: 395px;
+        left: 1217px;
+    }
+    .circle6 {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #d4c9b9;
+        z-index: 5;
+        top: -269px;
+        left: -101px;
+    }
+    .circle7 {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #803c05;
+        z-index: 4;
+        top: 367px;
+    left: 1175px;
+    }
+    .circle8 {
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #803c05;
+        z-index: 4;
+        top: -248px;
+        left: -118px;
+    }
+    .circle9 {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #505830;
+        z-index: 3;
+        top: 339px;
+        left: 1139px;
+    }
+        .circle10 {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #505830;
+            z-index: 3;
+            top: -204px;
+            left: -152px;
+        }
+        .circle11 {
+            position: absolute;
+            width: 650px;
+            height: 650px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #234361;
+            z-index: 2;
+            top: -155px;
+            left: -169px;
+        }
+        .circle12 {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #a47454;
+            z-index: 1;
+            top: -120px;
+            left: -180px;
+        }
+    }
+
+
+.promo {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 15%;
+    .h2 {
+        margin:0;
+        font-size: 24px;
+    }
+    .txt {
+       margin: 0;
+       padding-top: 20px;
+       font-size: 16px;
+       line-height: 25px;
+    }
+    .colors {
+        padding-top: 40px;
+        display: flex;
+        align-items:start;
+    .color1 {
+        background-color:#234361;
+        width: 30px;
+        height: 30px;
+    }
+    .color2 {
+        background-color:#b6341c;
+        width: 30px;
+        height: 30px;
+    }
+    .color3 {
+        background-color:#d4c9b9;
+        width: 30px;
+        height: 30px;
+    }
+    .color4 {
+        background-color:#505830;
+        width: 30px;
+        height: 30px;
+    }
+    .color5 {
+        background-color:#803c05; 
+        width: 30px;
+        height: 30px;
+    }
+}
+}
+
+.features {
+    width: 100%;
+    display: flex;
+    color:#fff;
+    line-height: 25px;
+        #icon {
+            width: 35px;
+            height: 35px;
+        }
+        .btnarea {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+        }
+        .btn {
+            height: 35px;
+            width: 35px;
+            border:none;
+            background-color:rgba($color: #000000, $alpha: 0.4);
+            font-size: 30px;
+            padding:0px;
+            border-radius:0;
+            color:#ffffff;
+        }
+.seo {
+    padding: 50px 50px 50px 150px;
+    width: 39%;
+    background-color:#234361;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    font-size: 14px;
+    
+}
+.responsive {
+    padding: 50px 50px;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    background-color:#b6341c;
+    font-size: 14px;
+    
+}
+.cloudservices {
+    padding: 50px 150px 50px 50px;
+    width: 39%;
+    background-color:#234361;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    font-size: 14px;
+    
+}}
+
+   .more {
+    width: 100%;
+    height: 450px;
+    background: url("https://cdn.clippingpath.in/wp-content/uploads/2023/07/14.-Daisy-field-landscape-for-wallpapers.webp");
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    font-size: 32px;
+.btn-base {
+    margin: 40px;
+}
+    .txt {
+        width: 30%;
+        text-align: center;
+    }
+    
+   }
+   .footer {
+    width: 100%;
+    height: 70px;
+    color:#616161;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   }
